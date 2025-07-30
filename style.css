@@ -102,8 +102,10 @@
     --spacing-400: 32px;
     --spacing-430: 38.5px;
     --spacing-440: 39.64px;
+    --spacing-445: 40px;
     --spacing-450: 44.5px;
     --spacing-500: 45px;
+    --spacing-550: 54px;
     --spacing-570: 57.5px;
     --spacing-690: 69px;
     --spacing-700: 70px;
@@ -437,3 +439,21 @@ span {
 }
 
 /* Desktop */
+
+@media (min-width: 1024px) {
+
+    .resultContainer {
+        min-width: 736px;
+
+    }
+
+    .resultSection {
+        padding: var(--spacing-500) var(--spacing-550);
+    }
+
+    .summarySection {
+        max-width: 368px;
+        width: 100%;
+        padding: var(--spacing-450) var(--spacing-445);
+    }
+}
