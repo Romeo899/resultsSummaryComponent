@@ -452,7 +452,7 @@ span {
     }
 
     .summarySection {
-        max-width: 368px;
+        max-width: 400px;
         width: 100%;
         padding: var(--spacing-450) var(--spacing-445);
     }
