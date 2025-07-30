@@ -333,6 +333,8 @@ span {
 
 /* Tablet */
 @media (min-width: 768px) {
+
+/* body */
     body {
         min-height: 100vh;
         background-color: var(--grey-150);
@@ -456,4 +458,35 @@ span {
         width: 100%;
         padding: var(--spacing-450) var(--spacing-445);
     }
+
+
+    /* button active state */
+
+    .continueButtonContainer:hover {
+        cursor: pointer;
+        background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    }
+
+/* attribution */
+
+.attribution a {
+    font: var(--text-preset-6);
+
+}
+
+.attribution { 
+
+    display: block;
+    position: absolute;
+    top: 15px;
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: hsl(35, 90%, 55%);
+}
 }
