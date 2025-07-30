@@ -1,4 +1,108 @@
 /* Mobile First Design */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-size: 18px;
+}
+
+/* reusuable styles */
+
+:root {
+
+    /* primary */
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* navy */
+
+    --navy-950: hsl(224, 30%, 27%);
+    --navy-200: hsl(241, 100%, 89%);
+    --navy-50: hsl(221, 100%, 96%);
+
+    /* blue */
+
+    --blue-800: hsl(234, 85%, 45%);
+    --blue-50: hsl(234, 71%, 97%);
+
+    /* yellow */
+
+    --yellow-400: hsl(39, 100%, 56%);
+    --yellow-50: hsl(38, 100%, 98%);
+
+    /* red */
+
+    --red-400: hsl(0, 100%, 67%);
+    --red-50: hsl(0, 100%, 98%);
+
+    /* green */
+
+    --green-500: hsl(166, 100%, 37%);
+    --green-50: hsl(162, 63%, 97%);
+
+    /* gradients - background*/
+
+    /* gradient 1 */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* gradient 2 */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+
+    /* neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0,0%,0%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* typography */
+
+    --text-preset-1: 900 72px/1 "Hanken Grotesk", sans-serif;
+    --text-preset-2: 900 56px/1 "Hanken Grotesk", sans-serif;
+    --text-preset-3: 700 32px/1.3 "Hanken Grotesk", sans-serif;
+    --text-preset-4: 700 24px/1.3 "Hanken Grotesk", sans-serif;
+    --text-preset-5: 700 18px/1.3 "Hanken Grotesk", sans-serif;
+    --text-preset-6: 500 16px/1.3 "Hanken Grotesk", sans-serif;
+    --default-letter-spacing: 0;
+
+    /* spacing */
+
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-1000: 80px;
+}
+
+/* body | center content */
+
+body {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+
+main.resultContainer {
+    width: 100%;
+}
+
+/* result Container */
+
+.resultSection {
+    padding: var(--)
+}
 
 
 /* attribution */
