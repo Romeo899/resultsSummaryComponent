@@ -61,6 +61,12 @@
     --violet-blue: hsl(252, 100%, 67%);
     --persian-blue: hsl(241, 81%, 54%);
 
+
+    /* gradient score Container Tablet */
+    --violet-blue-tablet: hsl(255, 73%, 45%) 0%;
+    --persian-blue-tablet: hsla(240, 73%, 46%, 0) 100%;
+
+
     /* neutral */
 
     --white: hsl(0, 0%, 100%);
@@ -68,6 +74,7 @@
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
+    --grey-150: hsl(228, 77%, 95%);
 
     /* typography */
 
@@ -75,6 +82,7 @@
     --text-preset-2: 900 56px/1 "Hanken Grotesk", sans-serif;
     --text-preset-3: 700 32px/1.3 "Hanken Grotesk", sans-serif;
     --text-preset-4: 700 24px/1.3 "Hanken Grotesk", sans-serif;
+    --text-preset-5-medium: 500 18px/1.3 "Hanken Grotesk", sans-serif;
     --text-preset-5: 700 18px/1.3 "Hanken Grotesk", sans-serif;
     --text-preset-6: 600 16px/1.3 "Hanken Grotesk", sans-serif;
     --mobile-text-preset-6: 400 16px/1.3 "Hanken Grotesk", sans-serif;
@@ -93,9 +101,14 @@
     --spacing-390: 31.5px;
     --spacing-400: 32px;
     --spacing-430: 38.5px;
+    --spacing-440: 39.64px;
+    --spacing-450: 44.5px;
+    --spacing-500: 45px;
     --spacing-570: 57.5px;
+    --spacing-690: 69px;
     --spacing-700: 70px;
     --spacing-1000: 80px;
+    --spacing-1100: 100px;
     --spacing-1280: 128px;
 }
 
@@ -126,7 +139,7 @@ body {
 
 /* default letter spacing applied  */
 
-h3 {
+h1, h3, span, div {
     letter-spacing: var(--default-letter-spacing);
 }
 
@@ -317,6 +330,110 @@ span {
 
 
 /* Tablet */
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+        background-color: var(--grey-150);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+
+    }
+    
+    /* border radius - result container rounded corners */
+
+    .resultContainer, .resultSection {
+        border-radius: var(--spacing-400);
+    }
+
+    .resultContainer {
+        display: flex;
+        background-color: var(--white);
+        max-width: 686px;
+        max-height: 512px;
+
+
+        box-shadow: 0 30px 60px 0 hsla(224, 82%, 58%, 0.15);
+    }
+
+    /* score container */
+
+    .resultSection {
+        max-width: 338px;
+        padding: var(--spacing-500) var(--spacing-690);
+    }
+
+    .resultHeading {
+        font: var(--text-preset-4);
+    }
+
+    .scoreContainer {
+        min-width: 200px;
+        min-height: 200px;
+        background: linear-gradient(
+            to bottom, 
+            var(--violet-blue-tablet),
+            var(--persian-blue-tablet));
+
+
+        border-radius: var(--spacing-1100);
+        margin: var(--spacing-400) 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scoreContent > h1 {
+        font: var(--text-preset-1);
+    }
+
+    .scoreContent > span {
+        font: var(--text-preset-5);
+    }
+
+    /* feedback Container */
+
+    .feedbackContainer h2 {
+        font: var(--text-preset-3);
+        margin-bottom: var(--spacing-200);
+    }
+
+    .feedbackContainer p {
+        font: var(--text-preset-5-medium);
+    }
+
+
+    /* summary section */
+
+    .summarySection {
+        max-width: 348px;
+        width: 100%;
+
+        margin: 0;
+        padding:  var(--spacing-450) var(--spacing-440);
+    }
+
+    .summaryHeading {
+        font: var(--text-preset-4);
+    }
+
+    .summaryContent {
+        margin: var(--spacing-400) 0 0 0;
+    }
+
+    .summaryItemContent {
+        text-align: center;
+    }
+
+    .summaryItemLabel {
+        font: var(--text-preset-5-medium);
+    }
+
+    .summaryItemScore, .summaryItemScoreBold {
+        font: var(--text-preset-5);
+    }
+}
 
 /* Desktop */
