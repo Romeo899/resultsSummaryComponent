@@ -14,7 +14,7 @@
 <main class="resultContainer">
   
   <section class="resultSection">
-    <h3>Your Result</h3>
+    <h3 class="resultHeading">Your Result</h3>
     <div class="scoreContainer">
       <div class="scoreContent">
         <h1>76</h1>
@@ -28,35 +28,37 @@
   </section>
   
   <section class="summarySection">
-    <h3>Summary</h3>  
+    <h3 class="summaryHeading">Summary</h3>  
     <aside class="summaryContent">
-      <div class="summaryItem">
+      <div class="summaryItem | summaryItemReaction">
         <div class="summaryItemContent">
-          <div class="summaryItemLabel">Reaction</div>
-          <div class="summaryItemScore">80 / 100</div>
+          <div class="summaryItemLabel | red-400">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction icon lightning bolt" class="summaryItemLabelImage">
+            Reaction</div>
+          <div class="summaryItemScore"><span class="summaryItemScoreBold">80</span> / 100</div>
         </div>
       </div>
-      <div class="summaryItem">
+      <div class="summaryItem | summaryItemMemory">
         <div class="summaryItemContent">
-          <div class="summaryItemLabel">Memory</div>
-          <div class="summaryItemScore">92 / 100</div>
+          <div class="summaryItemLabel | yellow-400"><img src="./assets/images/icon-memory.svg" alt="memory icon brain" class="summaryItemLabelImage">Memory</div>
+          <div class="summaryItemScore"><span class="summaryItemScoreBold">92</span> / 100</div>
         </div>
       </div>
-      <div class="summaryItem">
+      <div class="summaryItem | summaryItemVerbal">
         <div class="summaryItemContent">
-          <div class="summaryItemLabel">Verbal</div>
-          <div class="summaryItemScore">61 / 100</div>
+          <div class="summaryItemLabel | green-500"><img src="./assets/images/icon-verbal.svg" alt="verbal chat icon" class="summaryItemLabelImage">Verbal</div>
+          <div class="summaryItemScore"><span class="summaryItemScoreBold">61</span> / 100</div>
         </div>
       </div>
-      <div class="summaryItem">
+      <div class="summaryItem | summaryItemVisual">
         <div class="summaryItemContent">
-          <div class="summaryItemLabel">Visual</div>
-          <div class="summaryItemScore">72 / 100</div>
+          <div class="summaryItemLabel | blue-800"><img src="./assets/images/icon-visual.svg" alt="visual eye icon" class="summaryItemLabelImage">Visual</div>
+          <div class="summaryItemScore"><span class="summaryItemScoreBold">73</span> / 100</div>
         </div>
       </div>
+      <button class="continueButtonContainer">Continue</button>
     </aside>
 
-    <button class="continueButtonContainer">Continue</button>
   </section>
 </main>
   
